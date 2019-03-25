@@ -11,6 +11,20 @@
     <h1>Snuffles was my slave name!</h1>
   </div>
 
+  <button class="btn btn-default" type="button" id="login-button" onclick="toggleLoginFunction()">
+    Log in
+  </button>
+
+  <form action="/action_page.php">
+    Post Title:<br>
+    <input type="text" id="post-title"><br>
+    Post Body:<br>
+    <input type="text" id="post-body"><br><br>
+    <button class="btn btn-default" type="button" onclick="handleMessageFormSubmit()">
+      Submit Post!
+    </button>
+  </form>
+
   <p id="demo">
     My new name is Snowball, because my fur is fluffy and white.
   </p>
@@ -19,7 +33,7 @@
     Try it
   </button>
 
-  <div id="doge-image"/>
+  <div id="snuffles-image"/>
 
 </body>
 

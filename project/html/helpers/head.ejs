@@ -24,5 +24,19 @@
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "<%= process.env.API_KEY %>",
+    authDomain: "hubspotdemo-d8e47.firebaseapp.com",
+    databaseURL: "https://hubspotdemo-d8e47.firebaseio.com",
+    projectId: "hubspotdemo-d8e47",
+    storageBucket: "hubspotdemo-d8e47.appspot.com",
+    messagingSenderId: "818293433502"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <!-- then our app's own js file -->
 <script src="js/main.js"></script>
